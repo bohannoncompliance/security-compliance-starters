@@ -1,0 +1,43 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    time_server: "pool.ntp.org"
+  tasks:
+    - name: Ensure auditd installed
+      package:
+        name: "{{ 'auditd' if ansible_os_family == 'RedHat' else 'auditd' }}"
+        state: present
+
+    - name: Ensure auditd running and enabled
+      service:
+        name: auditd
+        state: started
+        enabled: yes
+
+    - name: Ensure chrony installed
+      package:
+        name: "{{ 'chrony' }}"
+        state: present
+
+    - name: Ensure chrony enabled
+      service:
+        name: chronyd
+        state: started
+        enabled: yes
+
+    - name: Enforce password max days
+      lineinfile:
+        path: /etc/login.defs
+        regexp: '^PASS_MAX_DAYS'
+        line: 'PASS_MAX_DAYS   90'
+
+    - name: Generate simple compliance report
+      copy:
+        dest: /tmp/compliance_report.md
+        content: |
+          # Baseline Check (demo)
+          - auditd: installed & running
+          - time sync: chrony enabled
+          - password policy: PASS_MAX_DAYS=90
+          Timestamp: {{ ansible_date_time.iso8601 }}
