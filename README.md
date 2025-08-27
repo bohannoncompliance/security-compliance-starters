@@ -1,4 +1,4 @@
-## Security & Compliance Starters$
+## Security & Compliance Starters
 
 ##  Automation to help startups and SMBs get audit-ready fast.
 
@@ -6,14 +6,14 @@ This repository contains demo playbooks, scripts, and evidence templates designe
 
 ---
 
-##  Who This Is For$
+##  Who This Is For
 - Startups preparing for SOC 2 or ISO 27001 audits
 - Small businesses that need to show secure practices to insurers or clients
 - DevOps teams looking for repeatable Linux hardening and evidence packs
 
 ---
 
-##  What's Inside$
+##  What's Inside
 - /compliance-ansible  Ansible playbook for baseline hardening
   - Logging & audit service enabled (`auditd`)
   - Time synchronization enforced (`chrony`)
@@ -25,7 +25,7 @@ This repository contains demo playbooks, scripts, and evidence templates designe
 
 ---
 
-##  Quick Start$
+##  Quick Start
     Clone this repo:
    #!/bin/bash
     git clone https://github.com/bohannoncompliance/security-compliance-starters.git
