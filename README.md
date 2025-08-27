@@ -26,7 +26,7 @@ This repository contains demo playbooks, scripts, and evidence templates designe
 ---
 
 ##  Quick Start
-    Clone this repo:
+Clone this repo:
     #!/bin/bash
     git clone https://github.com/bohannoncompliance/security-compliance-starters.git
     cd security-compliance-starters/compliance-ansible
@@ -41,33 +41,33 @@ Collect the evidence report:
 
 ##  What You Get
 
-    Working automation examples (ready to expand for your environment)
+- Working automation examples (ready to expand for your environment)
 
-    Audit-friendly reports (Markdown/HTML logs to hand to auditors or insurers)
+- Audit-friendly reports (Markdown/HTML logs to hand to auditors or insurers)
 
-    Clear documentation (how controls map to common frameworks)
+- Clear documentation (how controls map to common frameworks)
 
 ##  How to Use
 
-    Use as a starting point for your organization's SOC 2 or ISO 27001 compliance.
+- Use as a starting point for your organization's SOC 2 or ISO 27001 compliance.
 
-    Extend the playbook with additional controls (firewall configs, MFA, backup tests).
+- Extend the playbook with additional controls (firewall configs, MFA, backup tests).
 
-    Adapt the evidence templates to your own audit binder or compliance platform.
+- Adapt the evidence templates to your own audit binder or compliance platform.
 
 ##  Work With Me
 
-    This repository is a demo of what I build for clients.
+This repository is a demo of what I build for clients.
 
-    If you need:
+If you need:
 
-       A fixed-price SOC 2 Script Pack (baseline checks + report)
+- A fixed-price SOC 2 Script Pack (baseline checks + report)
 
-       A Security Hardening Jumpstart (logging, patching, MFA plan, backup checklist)
+- A Security Hardening Jumpstart (logging, patching, MFA plan, backup checklist)
 
-       Or a DevOps & Compliance Starter Kit (automation pipeline + evidence packs)
+- Or a DevOps & Compliance Starter Kit (automation pipeline + evidence packs)
 
-       Contact me on Upwork or connect on LinkedIn.
+- Contact me on Upwork or connect on LinkedIn.
 
 ##  Disclaimer
 
