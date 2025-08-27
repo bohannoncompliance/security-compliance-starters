@@ -32,7 +32,7 @@ Clone this repo:
     git clone https://github.com/bohannoncompliance/security-compliance-starters.git
     cd security-compliance-starters/compliance-ansible
 
-    Run the playbook against a test host:
+Run the playbook against a test host:
 
     ansible-playbook -i <your_inventory_file> playbook.yml
 
