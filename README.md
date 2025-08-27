@@ -27,6 +27,7 @@ This repository contains demo playbooks, scripts, and evidence templates designe
 
 ##  Quick Start
 Clone this repo:
+
     #!/bin/bash
     git clone https://github.com/bohannoncompliance/security-compliance-starters.git
     cd security-compliance-starters/compliance-ansible
